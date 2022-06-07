@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM SUBMISSION</title>
+    </head>
+    <body>
+        <header id="Main-Header">
+            <h1>PROGRAMMING LANGUAGES KNOWN</h1>
+        </header>
+        <p>The following form is to take information about your prior programming knowledge,<em>your information is safe with us.</em></p>
+        <section id="Section 1">
+            <form action="process.php" method="post">
+                <div>
+                    <label>Username</label>
+                    <input type="text" name="USERNAME">
+                </div>
+                <br>
+                <div>
+                    <label>EmailId</label>
+                    <input type="email" name="EMAILID">
+                </div>
+                <br>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="PASSWD">
+                </div>
+                <br>
+                <div>
+                    <label>Date Of Birth</label>
+                    <input type="date" name="DATE" id="send" onclick="result.value=send.value">
+                    <input type="text" id="result">
+                </div>
+                <br>
+                <div>
+                    <label>Age</label>
+                    <input type="number" id="AGE">
+                </div>
+                <br>
+            </form>
+        </section>
+        <section id="Section2">
+            <P>How do you identify yourself based on <strong>coding</strong> experience?</P>
+            <form action="process.php" method="POST">
+                <div>
+                    <input type="radio" name="CODING" value="1.Basic">
+                    <label>1.Basic</label>
+                    <br>
+                    <input type="radio" name="CODING" value="2.Intermediate">
+                    <label>2.Intermediate</label>
+                    <br>
+                    <input type="radio" name="CODING" value="3.Expert">
+                    <label>3.Expert</label>
+                </div>
+                <br>
+            <p>What all <strong>languages</strong> are you familiar with?</p>
+                <div>
+                    <input type="checkbox" name="LANGUAGE" value="PYTHON">
+                    <label>PYTHON</label>
+                    <br>
+                    <input type="checkbox" name="LANGUAGE" value="CPP">
+                    <label>CPP</label>
+                    <br>
+                    <input type="checkbox" name="LANGUAGE" value="JAVA">
+                    <label>JAVA</label>
+                    <br>
+                    <input type="checkbox" name="LANGUAGE" value="RUBY">
+                    <label>RUBY</label>
+                    <br>
+                    <input type="checkbox" name="LANGUAGE" value="HTML">
+                    <label>HTML</label>
+                    <br>
+                    <input type="checkbox" name="LANGUAGE" value="OTHER">
+                    <LABEL>Other?</LABEL>
+                    <label>Enter if you know any other languages</label>
+                    <input type="text" name="OTHERS">
+                </div>
+                <br>
+                <div>
+                    <textarea name="Dummy">Enter Message</textarea>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p> Copyright &copy; 2022 Naseeha Salam</p>
+        </footer>
+    </body>
+    
+</html>
